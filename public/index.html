@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chat-Room App</title>
+    <link rel="stylesheet" href="./CSS/onboarding.css" />
+    <link rel="stylesheet" href="./CSS/membersList.css" />
+    <link rel="stylesheet" href="./CSS/chatSection.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="login-container">
+      <!-- Create a form to enter username and room ID -->
+      <form id="onboarding-form">
+        <div class="image-upload">
+          <input class="image-input" type="file" accept="image/*" />
+        </div>
+        <input
+          type="text"
+          id="username-input"
+          placeholder="Username here"
+          required
+        />
+        <!-- <input
+          type="text"
+          id="room-input"
+          placeholder="Enter room ID"
+          required
+        /> -->
+        <button id="start-chatting" type="submit">Start Chatting</button>
+      </form>
+    </div>
+
+    <div id="chat-section" class="hidden">
+      <div id="chat-container">
+        <div class="header">
+          <span class="welcome-message"></span><span class="typing"></span>
+        </div>
+        <div id="messages-section"></div>
+
+        <form id="message-form">
+          <input
+            type="text"
+            id="message-input"
+            placeholder="Type your message"
+            required
+          />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <div id="online-members">
+        <div class="header">Connected users: <span></span></div>
+        <div class="members-list"></div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="http://localhost:3000/socket.io/socket.io.js"
+    ></script>
+    <script src="/siofu/client.js"></script>
+    <script type="module" src="./scripts/script.js"></script>
+    <script type="module" src="./scripts/chatSection.js"></script>
+  </body>
+</html>

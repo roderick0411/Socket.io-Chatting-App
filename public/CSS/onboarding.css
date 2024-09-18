@@ -1,0 +1,71 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#onboarding-form {
+    width: 20rem;
+    margin: auto;
+    margin-top: 10rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+.image-upload {
+    all: unset;
+    width: 7rem;
+    aspect-ratio: 1;
+    border: 1px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    background-image: url(../resoures/user-icon.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.image-input {
+    width: 100%;
+    aspect-ratio: 1;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none!important;
+}
+
+#chat-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#chat-container {
+    flex-basis: 70%;
+}
+
+#chat-container .welcome-message::before {
+    content: "";
+    display: inline-block;
+    width: .5rem;
+    aspect-ratio: 1;
+    background-color: aquamarine;
+    border-radius: 50%;
+}
+
+@media (width <= 480px) {
+    #chat-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-items: stretch;
+    }
+  }

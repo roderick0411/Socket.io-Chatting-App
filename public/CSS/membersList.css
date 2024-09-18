@@ -1,0 +1,36 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#online-members {
+    border: 1px solid black;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+#online-members .header {
+    text-align: center;
+    padding: 1rem;
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+.members-list>div {
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    gap: 1rem;
+}
+
+.members-list .picture-container {
+    width: 2rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.members-list .picture-container img{
+    width: 100%
+}
