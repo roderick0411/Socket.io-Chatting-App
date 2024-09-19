@@ -21,9 +21,13 @@ The chat user interface will be carefully designed to enhance the user experienc
 When a user joins ChatterUp 
 for the first time, they will be prompted to provide their name, and a warm welcome message will be displayed in the header with their name.
 
+![User Login](screenshots/chatterUpLogin.png)
+
 ## Chat History and User Count
 
 Newly joined users will have access to the chat history, enabling them to catch up on previous conversations. Users will also receive real-time information about how many others have already joined the chat.
+
+
 
 ## Broadcasting Messages and Database Storage
 
@@ -37,9 +41,13 @@ As users type messages, a 'typing...' indicator will be displayed to all connect
 
 When a new user joins the application, their name will be added to the notification panel, marked with an online symbol (a green dot). All connected users will be notified of this addition, fostering a sense of community.
 
+![Dwight Joined](screenshots/dwightJoined.png)
+
 ## Notification of User Disconnections
 
 Whenever a user leaves the application, the notification panel will be updated to reflect the remaining connected users, and the name of the disconnected user will be removed.
+
+![Pam Left](screenshots/pamLeft.png)
 
 ## Profile Pictures for User Consistency
 
